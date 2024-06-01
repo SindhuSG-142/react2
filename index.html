@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,13 +15,18 @@
       let root = document.getElementById("root");
       let data="Seize the day";
       let p=<p>{data}</p>;
-      const reactRoot = ReactDOM.createRoot(root);
-      reactRoot.render(p)
-      let root2 = document.getElementById("root2");
+    //   const reactRoot = ReactDOM.createRoot(root);
+    //   reactRoot.render(p)
+      // let root2 = document.getElementById("root2");
       let flag=false;
-      let element=flag?<p>Seize the day</p>:<p>Good Day</p>;
-      const reactRoot2=ReactDOM.createRoot(root2);
-      reactRoot2.render(element)
+      let data2=flag?<p>Seize the day</p>:<p>Good Day</p>;
+      let element=(
+        <>
+        <p>{data}</p><p>{data2}</p>
+        </>
+      )
+      const reactRoot=ReactDOM.createRoot(root);
+      reactRoot.render(element)
     </script>
   </body>
 </html>
